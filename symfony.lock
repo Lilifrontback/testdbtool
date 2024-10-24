@@ -26,6 +26,9 @@
             "migrations/.gitignore"
         ]
     },
+    "makinacorpus/db-tools-bundle": {
+        "version": "1.2.1"
+    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {

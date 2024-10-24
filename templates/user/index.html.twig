@@ -1,0 +1,40 @@
+{# templates/user/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Users</h1>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Last Name</th>
+<th>First Name</th>
+<th>Numéro de sécurité sociale</th>
+<th>Address</th>
+<th>Phone</th>
+<th>cb</th>
+<th>Actions</th>
+
+</tr>
+</thead>
+<tbody>
+{% for user in users %}
+<tr>
+<td>{{ user.id }}</td>
+<td>{{ user.lastName }}</td>
+<td>{{ user.firstName }}</td>
+<td>{{ user.secu }}</td>
+<td>{{ user.adress }}</td>
+<td>{{ user.phone }}</td>
+<td>{{ user.cb }}</td>
+
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+Code
+
+<a href="{{ path('user_new') }}">Create New User</a>
+
+{% endblock %}
